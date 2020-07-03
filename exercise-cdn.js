@@ -23,10 +23,16 @@
 const {select} = require('./cdn');
 
 async function main() {
-    const serve = await select();
 
-    // bonus section
-    // serve = ....
+    let serve = await select()
 
-    await serve('/api/fetch-items');
+   await serve('/api/fetch-items')
+
+  serve = await select()
+
+  await serve('/api/fetch-items')
+
 }
+
+
+main()

@@ -23,6 +23,7 @@
 const {select} = require('./cdn');
 
 async function main() {
+//todo :  1. check how to calculate fastest server 2.  check how to validate content exists assuming select should check it
 
     let serve = await select()
 
